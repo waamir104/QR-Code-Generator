@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" defer></script>
+    <script src="../js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="main" class="main">
+        <a href="../index.html">
+            <img src="../img/logo-qr-generator.svg" id="logo_qr_code_page" alt="logo-qr-generator" srcset="">
+        </a>
+        <div class="container">
+            <div class="qr_container" id="qr_container"></div>
+            <div class="btns_container">
+                <button id="download_btn" class="qr_btns btns download_btn">
+                    Download
+                    <img src="../img/icons8-download-24.png" class="icons" alt="Download icon">
+                </button>
+                <button id="share_btn" class="qr_btns btns share_btn">
+                    Share
+                    <img src="../img/icons8-link-16.png" class="icons" alt="Share icon">
+                </button>
+            </div>
+        </div>
+        <img src="../img/icons8-circle-96.png" alt="bg-illustration" id="bg-illustration-circle">
+        <img src="../img/bg-illustration.svg" id="bg-illustration" class="bg-illustration" alt="bg-illustration">
+    </div>
+</body>
+</html>
