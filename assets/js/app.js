@@ -16,7 +16,16 @@ var qrcode = new QRCode(qr_container, {
 });
 
 download_btn.addEventListener("click", () => {
-	// TODO
+	let qr_img = document.querySelector(".qr_container img");
+    let src = qr_img.src;
+
+    let a = document.createElement("a");
+    a.href = src;
+    a.download = src;
+
+    a.click();
+
+    document.body.removeChild(a);
 })
 
 share_btn.addEventListener("click", () => {
